@@ -5,6 +5,7 @@ Skills y comandos personalizados para Claude Code.
 ## CLI de Skills
 
 ```bash
+npx skills@latest
 npx skills add <package>   # Instalar una skill
 npx skills list            # Listar skills instaladas
 npx skills find [query]    # Buscar skills
@@ -23,6 +24,7 @@ npx skills init [name]     # Crear una nueva skill
 **Descripción:** Proporciona mejores prácticas de React recomendadas por Vercel para desarrollo con Next.js y React moderno.
 
 **Instalación:**
+
 ```bash
 npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-best-practices
 ```
@@ -34,6 +36,7 @@ npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-
 **Descripción:** Mejores prácticas específicas para desarrollo con Next.js, incluyendo App Router, Server Components, y optimizaciones.
 
 **Instalación:**
+
 ```bash
 npx skills add https://github.com/vercel-labs/next-skills --skill next-best-practices
 ```
@@ -45,6 +48,7 @@ npx skills add https://github.com/vercel-labs/next-skills --skill next-best-prac
 **Descripción:** Ayuda a migrar y actualizar proyectos Next.js a versiones más recientes con guías de breaking changes.
 
 **Instalación:**
+
 ```bash
 npx skills add https://github.com/vercel-labs/next-skills --skill next-upgrade
 ```
@@ -56,6 +60,7 @@ npx skills add https://github.com/vercel-labs/next-skills --skill next-upgrade
 **Descripción:** Patrones de composición de componentes recomendados por Vercel para arquitectura escalable y reutilizable.
 
 **Instalación:**
+
 ```bash
 npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-composition-patterns
 ```
@@ -67,6 +72,7 @@ npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-compos
 **Descripción:** Guías y mejores prácticas de diseño web para interfaces modernas, accesibles y con buena UX.
 
 **Instalación:**
+
 ```bash
 npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines
 ```
@@ -78,6 +84,7 @@ npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-gu
 **Descripción:** Permite realizar auditorías SEO de sitios web, analizar metadatos, estructura, y dar recomendaciones para mejorar el posicionamiento.
 
 **Instalación:**
+
 ```bash
 npx skills add https://github.com/coreyhaines31/marketingskills --skill seo-audit
 ```
@@ -104,3 +111,21 @@ Valida el Schema.org (LocalBusinessSchema). Verifica si Google puede leer los da
 2. Poner la URL del sitio
 3. Ver si el schema está bien o tiene errores
 ```
+
+---
+
+## AGENTS.md (Recomendado por Vercel)
+
+Alternativa a skills. Un archivo markdown en la raíz del proyecto que da contexto persistente al agente en cada interacción, sin depender de que se invoque una skill.
+
+En evals de Vercel, AGENTS.md logró **100% de éxito** vs 53% de skills por defecto.
+
+**Generar AGENTS.md para un proyecto Next.js:**
+
+```bash
+npx @next/codemod@canary agents-md
+```
+
+Detecta tu versión de Next.js y genera el archivo con la documentación comprimida.
+
+> Fuente: https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals
