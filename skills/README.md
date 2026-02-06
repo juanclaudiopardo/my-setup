@@ -79,6 +79,18 @@ npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-gu
 
 ---
 
+### Vercel React Native Skills
+
+**Descripción:** Mejores prácticas y patrones para desarrollo con React Native recomendados por Vercel.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-native-skills
+```
+
+---
+
 ### SEO Audit
 
 **Descripción:** Permite realizar auditorías SEO de sitios web, analizar metadatos, estructura, y dar recomendaciones para mejorar el posicionamiento.
