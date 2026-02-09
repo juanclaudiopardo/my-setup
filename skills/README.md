@@ -91,6 +91,18 @@ npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-
 
 ---
 
+### Vitest
+
+**Descripción:** Mejores prácticas y patrones para testing con Vitest, el framework de testing rápido y moderno compatible con Vite.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/antfu/skills --skill vitest
+```
+
+---
+
 ### SEO Audit
 
 **Descripción:** Permite realizar auditorías SEO de sitios web, analizar metadatos, estructura, y dar recomendaciones para mejorar el posicionamiento.
