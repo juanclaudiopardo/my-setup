@@ -138,6 +138,18 @@ Valida el Schema.org (LocalBusinessSchema). Verifica si Google puede leer los da
 
 ---
 
+### React Native Testing Library
+
+**Descripción:** Mejores prácticas y patrones para testing de componentes React Native usando React Native Testing Library de Callstack.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/callstack/react-native-testing-library --skill react-native-testing
+```
+
+---
+
 ## AGENTS.md (Recomendado por Vercel)
 
 Alternativa a skills. Un archivo markdown en la raíz del proyecto que da contexto persistente al agente en cada interacción, sin depender de que se invoque una skill.
