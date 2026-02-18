@@ -11,7 +11,7 @@ Language: Spanish (all documentation is written in Spanish).
 ## Structure
 
 - `mcp/README.md` — MCP server installation commands (Playwright, shadcn/ui, Figma, Next.js DevTools, TanStack, Nx)
-- `skills/README.md` — Skills CLI usage and installed skills (Vercel React Best Practices, Next.js Best Practices, Next.js Upgrade, Vercel Composition Patterns, Web Design Guidelines, SEO Audit, Nx Workspace Skills), plus AGENTS.md guidance
+- `skills/README.md` — Skills CLI usage and installed skills organized by category (React/Next.js, AI SDK, Design/UI, Browser Automation, Deployment, Commerce, Workflow, JSON Render, Testing, SEO, Nx), plus AGENTS.md guidance
 
 ## Key References
 

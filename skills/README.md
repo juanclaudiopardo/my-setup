@@ -15,13 +15,25 @@ npx skills remove          # Eliminar skills instaladas
 npx skills init [name]     # Crear una nueva skill
 ```
 
+Para instalar una skill específica de un repo con múltiples skills:
+
+```bash
+npx skills add <owner/repo> --skill <skill-name>
+```
+
+Las skills funcionan con 18+ agentes de IA: Claude Code, GitHub Copilot, Cursor, Cline, y más.
+
 ---
 
 ## Skills Instaladas
 
-### Vercel React Best Practices
+### React y Next.js
 
-**Descripción:** Proporciona mejores prácticas de React recomendadas por Vercel para desarrollo con Next.js y React moderno.
+Skills para construir aplicaciones React y Next.js performantes.
+
+#### Vercel React Best Practices
+
+**Descripción:** Guías de optimización de performance para React y Next.js con 40+ reglas en 8 categorías.
 
 **Instalación:**
 
@@ -31,33 +43,9 @@ npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-
 
 ---
 
-### Next.js Best Practices
+#### Vercel Composition Patterns
 
-**Descripción:** Mejores prácticas específicas para desarrollo con Next.js, incluyendo App Router, Server Components, y optimizaciones.
-
-**Instalación:**
-
-```bash
-npx skills add https://github.com/vercel-labs/next-skills --skill next-best-practices
-```
-
----
-
-### Next.js Upgrade
-
-**Descripción:** Ayuda a migrar y actualizar proyectos Next.js a versiones más recientes con guías de breaking changes.
-
-**Instalación:**
-
-```bash
-npx skills add https://github.com/vercel-labs/next-skills --skill next-upgrade
-```
-
----
-
-### Vercel Composition Patterns
-
-**Descripción:** Patrones de composición de componentes recomendados por Vercel para arquitectura escalable y reutilizable.
+**Descripción:** Patrones de composición de React que escalan, evitando la proliferación de boolean props.
 
 **Instalación:**
 
@@ -67,21 +55,9 @@ npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-compos
 
 ---
 
-### Web Design Guidelines
+#### Vercel React Native Skills
 
-**Descripción:** Guías y mejores prácticas de diseño web para interfaces modernas, accesibles y con buena UX.
-
-**Instalación:**
-
-```bash
-npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines
-```
-
----
-
-### Vercel React Native Skills
-
-**Descripción:** Mejores prácticas y patrones para desarrollo con React Native recomendados por Vercel.
+**Descripción:** Mejores prácticas de React Native con 16 reglas cubriendo performance, arquitectura y patrones específicos por plataforma.
 
 **Instalación:**
 
@@ -91,7 +67,319 @@ npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-
 
 ---
 
-### Vitest
+#### Next.js Best Practices
+
+**Descripción:** Mejores prácticas de Next.js cubriendo convenciones de archivos, boundaries de RSC, patrones de datos, y más.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/next-skills --skill next-best-practices
+```
+
+---
+
+#### Next.js Cache Components
+
+**Descripción:** Cache Components y PPR de Next.js 16 para mezclar contenido estático, cacheado y dinámico.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/next-skills --skill next-cache-components
+```
+
+---
+
+#### Next.js Upgrade
+
+**Descripción:** Actualizar Next.js a la última versión usando guías de migración oficiales y codemods.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/next-skills --skill next-upgrade
+```
+
+---
+
+#### CRA to Next.js Migration
+
+**Descripción:** Guía completa para convertir proyectos Create React App a Next.js.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/migration-skills --skill cra-to-next-migration
+```
+
+---
+
+#### Turborepo
+
+**Descripción:** Guía del build system para monorepos JavaScript y TypeScript con cache de tareas y ejecución paralela.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel/turborepo --skill turborepo
+```
+
+---
+
+### AI SDK
+
+Skills para construir aplicaciones con IA usando el Vercel AI SDK.
+
+#### AI SDK
+
+**Descripción:** Responde preguntas sobre el AI SDK y ayuda a construir features con IA incluyendo agentes, chatbots y sistemas RAG.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel/ai --skill ai-sdk
+```
+
+---
+
+#### AI Elements
+
+**Descripción:** Librería de componentes basada en shadcn/ui para aplicaciones AI-native.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel/ai-elements --skill ai-elements
+```
+
+---
+
+#### Streamdown
+
+**Descripción:** Renderer de React Markdown optimizado para streaming con seguridad integrada.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel/streamdown --skill streamdown
+```
+
+---
+
+### Diseño y UI
+
+Skills para construir interfaces accesibles y performantes.
+
+#### Web Design Guidelines
+
+**Descripción:** Revisa código UI para cumplimiento de Web Interface Guidelines con 100+ reglas cubriendo accesibilidad, performance y UX.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines
+```
+
+---
+
+#### Building Components
+
+**Descripción:** Guía para construir componentes UI con accesibilidad, APIs componibles y theming.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel/components.build --skill building-components
+```
+
+---
+
+### Automatización de Browser
+
+Skills para automatizar interacciones del navegador.
+
+#### Agent Browser
+
+**Descripción:** CLI de automatización del browser para agentes de IA incluyendo navegación, llenado de formularios, screenshots y extracción de datos.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser
+```
+
+---
+
+### Deployment
+
+Skills para deploy de aplicaciones en Vercel.
+
+#### Vercel Deploy
+
+**Descripción:** Deploy de aplicaciones y sitios web a Vercel al instante con auto-detección de framework para 40+ frameworks.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-deploy
+```
+
+---
+
+#### Vercel CLI
+
+**Descripción:** Deploy, gestión y desarrollo de proyectos en Vercel desde la línea de comandos.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel/vercel --skill vercel-cli
+```
+
+---
+
+#### Autoship
+
+**Descripción:** Releases automatizados con clonado de repositorio, generación de changeset con IA, y publicación a npm.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/autoship --skill autoship
+```
+
+---
+
+### Commerce
+
+Skills para construir experiencias de comercio y pagos.
+
+#### UCP (Universal Commerce Protocol)
+
+**Descripción:** Protocolo Universal de Comercio para sesiones de checkout, pagos y operaciones de commerce.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/agentic-commerce-skills --skill ucp
+```
+
+---
+
+### Workflow
+
+Skills para construir workflows durables y resilientes.
+
+#### Workflow
+
+**Descripción:** Funciones async durables y resilientes con lógica de retry y orquestación basada en steps.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel/workflow --skill workflow
+```
+
+---
+
+### JSON Render
+
+Skills para el framework de UI generativa JSON Render.
+
+#### JSON Render Core
+
+**Descripción:** Paquete core para definición de schemas, creación de catálogos y streaming de specs.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/json-render --skill json-render-core
+```
+
+---
+
+#### JSON Render React
+
+**Descripción:** Renderer React que convierte specs JSON en árboles de componentes React.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/json-render --skill json-render-react
+```
+
+---
+
+#### JSON Render React Native
+
+**Descripción:** Renderer React Native para specs JSON con componentes estándar y data binding.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/json-render --skill json-render-react-native
+```
+
+---
+
+#### JSON Render Remotion
+
+**Descripción:** Renderer Remotion que convierte specs JSON de timeline en videos.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/json-render --skill json-render-remotion
+```
+
+---
+
+#### Remotion Best Practices
+
+**Descripción:** Mejores prácticas para creación de videos con Remotion en React con 30+ archivos de reglas.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/remotion-dev/skills --skill remotion-best-practices
+```
+
+---
+
+### Utilidad
+
+Skills de propósito general para workflows de agentes.
+
+#### Find Skills
+
+**Descripción:** Descubrir e instalar skills de agentes desde el directorio skills.sh.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/skills --skill find-skills
+```
+
+---
+
+#### Before and After
+
+**Descripción:** Herramienta de comparación de screenshots para capturar estados antes/después de páginas web.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/before-and-after --skill before-and-after
+```
+
+---
+
+### Testing
+
+Skills de testing de terceros.
+
+#### Vitest
 
 **Descripción:** Mejores prácticas y patrones para testing con Vitest, el framework de testing rápido y moderno compatible con Vite.
 
@@ -103,7 +391,33 @@ npx skills add https://github.com/antfu/skills --skill vitest
 
 ---
 
-### SEO Audit
+#### React Native Best Practices (Callstack)
+
+**Descripción:** Mejores prácticas de React Native por Callstack cubriendo arquitectura, performance y patrones de desarrollo.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/callstackincubator/agent-skills --skill react-native-best-practices
+```
+
+---
+
+#### React Native Testing Library
+
+**Descripción:** Mejores prácticas y patrones para testing de componentes React Native usando React Native Testing Library de Callstack.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/callstack/react-native-testing-library --skill react-native-testing
+```
+
+---
+
+### SEO
+
+#### SEO Audit
 
 **Descripción:** Permite realizar auditorías SEO de sitios web, analizar metadatos, estructura, y dar recomendaciones para mejorar el posicionamiento.
 
@@ -134,18 +448,6 @@ Valida el Schema.org (LocalBusinessSchema). Verifica si Google puede leer los da
 1. Ir a https://search.google.com/test/rich-results
 2. Poner la URL del sitio
 3. Ver si el schema está bien o tiene errores
-```
-
----
-
-### React Native Testing Library
-
-**Descripción:** Mejores prácticas y patrones para testing de componentes React Native usando React Native Testing Library de Callstack.
-
-**Instalación:**
-
-```bash
-npx skills add https://github.com/callstack/react-native-testing-library --skill react-native-testing
 ```
 
 ---
