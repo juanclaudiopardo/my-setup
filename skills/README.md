@@ -457,13 +457,22 @@ Valida el Schema.org (LocalBusinessSchema). Verifica si Google puede leer los da
 **Descripción:** Skills de workspace de Nx que enseñan al agente a usar generadores, CI, tareas, plugins y navegación del project graph. En lugar de exponer datos por MCP, Nx provee instrucciones específicas por dominio — la diferencia entre darle una llave inglesa a alguien y enseñarle a ser mecánico.
 
 Skills incluidas:
-- **Generator skills** — enseñan cuándo y cómo usar generadores de Nx
-- **CI fix subagent** — análisis autónomo de errores y fixes
-- **Project graph navigation** — exploración de dependencias del workspace
+- **nx-workspace** — exploración de la estructura del monorepo usando el project graph de Nx (`nx show projects`, `nx graph`), filtrado por tipo, tags o patrones
+- **nx-generate** — descubre convenciones del workspace, encuentra generadores apropiados, los ejecuta con los flags correctos y verifica la calidad del output
+- **nx-run-tasks** — ejecución de tareas via Nx CLI: single tasks (`nx run`), múltiples (`nx run-many`) y affected (`nx affected`) con flags como `--configuration`, `--parallel` y filtros por tags
+- **nx-plugins** — descubrimiento de plugins disponibles con `nx list` e instalación con `nx add`
+- **monitor-ci** — canal de comunicación entre el agente local y Nx Cloud CI para monitoreo de pipelines en tiempo real y self-healing autónomo
+- **link-workspace-packages** — linking de paquetes cross-monorepo para pnpm, yarn, npm y bun con el workspace protocol correcto
 
-**Instalación:**
+**Instalación via Skills CLI:**
 
-Se configura automáticamente junto con el MCP server y CLAUDE.md de Nx con un solo comando:
+```bash
+npx skills add nrwl/nx-ai-agents-config
+```
+
+**Instalación completa (skills + MCP server + CLAUDE.md):**
+
+Se configura automáticamente con un solo comando:
 
 ```bash
 npx nx configure-ai-agents
@@ -475,7 +484,7 @@ El comando detecta qué herramientas de IA tenés y genera las configuraciones c
 
 Ver también: [Nx MCP Server](../mcp/README.md#nx)
 
-> Fuente: https://nx.dev/blog/why-we-deleted-most-of-our-mcp-tools
+> Fuente: https://nx.dev/blog/nx-ai-agent-skills
 
 ---
 
