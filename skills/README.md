@@ -150,6 +150,33 @@ npx skills add https://github.com/callstack/react-native-testing-library --skill
 
 ---
 
+### Nx Workspace Skills
+
+**Descripción:** Skills de workspace de Nx que enseñan al agente a usar generadores, CI, tareas, plugins y navegación del project graph. En lugar de exponer datos por MCP, Nx provee instrucciones específicas por dominio — la diferencia entre darle una llave inglesa a alguien y enseñarle a ser mecánico.
+
+Skills incluidas:
+- **Generator skills** — enseñan cuándo y cómo usar generadores de Nx
+- **CI fix subagent** — análisis autónomo de errores y fixes
+- **Project graph navigation** — exploración de dependencias del workspace
+
+**Instalación:**
+
+Se configura automáticamente junto con el MCP server y CLAUDE.md de Nx con un solo comando:
+
+```bash
+npx nx configure-ai-agents
+```
+
+> Requisito: necesitás tener Nx en tu proyecto. Si no lo tenés: `npx nx@latest init`
+
+El comando detecta qué herramientas de IA tenés y genera las configuraciones correspondientes. Funciona para Claude Code, Cursor, Copilot, Gemini, Codex y OpenCode.
+
+Ver también: [Nx MCP Server](../mcp/README.md#nx)
+
+> Fuente: https://nx.dev/blog/why-we-deleted-most-of-our-mcp-tools
+
+---
+
 ## AGENTS.md (Recomendado por Vercel)
 
 Alternativa a skills. Un archivo markdown en la raíz del proyecto que da contexto persistente al agente en cada interacción, sin depender de que se invoque una skill.

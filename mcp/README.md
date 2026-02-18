@@ -56,3 +56,27 @@ claude mcp add next-devtools npx next-devtools-mcp@latest
 ```bash
 claude mcp add tanstack -- npx @tanstack/cli mcp
 ```
+
+---
+
+## Nx
+
+**Descripción:** Servidor MCP lean de Nx para conectarse a Nx Cloud y Self-Healing CI. Proporciona acceso a APIs autenticadas que el agente no puede alcanzar por CLI solo.
+
+> Filosofía Nx: **"skills para conocimiento, MCP para conectividad"**. Eliminaron la mayoría de herramientas MCP porque eran redundantes (el agente ya puede correr CLI directo) y caras en tokens. Solo queda MCP para lo que requiere APIs autenticadas.
+
+**Instalación:**
+
+Se configura automáticamente junto con las skills y CLAUDE.md de Nx con un solo comando:
+
+```bash
+npx nx configure-ai-agents
+```
+
+> Requisito: necesitás tener Nx en tu proyecto. Si no lo tenés: `npx nx@latest init`
+
+El comando detecta qué herramientas de IA tenés y genera las configuraciones correspondientes. Funciona para Claude Code, Cursor, Copilot, Gemini, Codex y OpenCode.
+
+Ver también: [Nx Workspace Skills](../skills/README.md#nx-workspace-skills)
+
+> Fuente: https://nx.dev/blog/why-we-deleted-most-of-our-mcp-tools
