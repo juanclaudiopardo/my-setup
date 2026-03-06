@@ -183,6 +183,18 @@ npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-gu
 
 ---
 
+#### shadcn/ui
+
+**Descripción:** Componentes de UI reutilizables y accesibles construidos con Radix UI y Tailwind CSS.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/shadcn/ui --skill shadcn
+```
+
+---
+
 #### Building Components
 
 **Descripción:** Guía para construir componentes UI con accesibilidad, APIs componibles y theming.
