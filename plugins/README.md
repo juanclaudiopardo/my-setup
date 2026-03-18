@@ -13,7 +13,7 @@ Plugins instalados en Claude Code. Los plugins inyectan conocimiento contextual 
 Dentro de claude
 
 ```bash
-/claude plugin add vercel
+/plugin install vercel
 ```
 
 > Fuente: https://vercel.com/changelog/introducing-vercel-plugin-for-coding-agents
