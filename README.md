@@ -6,4 +6,6 @@ Documentación de mi configuración para Claude Code.
 
 - [MCP Servers](./mcp/README.md) - Servidores MCP instalados
 - [Skills](./skills/README.md) - Skills y comandos personalizados
+- [Plugins](./plugins/README.md) - Plugins instalados
+- [Tools](./tools/README.md) - Herramientas CLI independientes
 # my-setup
