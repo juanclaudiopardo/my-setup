@@ -10,8 +10,10 @@ Plugins instalados en Claude Code. Los plugins inyectan conocimiento contextual 
 
 **Instalación:**
 
+Dentro de claude
+
 ```bash
-claude plugin add vercel
+/claude plugin add vercel
 ```
 
 > Fuente: https://vercel.com/changelog/introducing-vercel-plugin-for-coding-agents
