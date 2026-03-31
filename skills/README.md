@@ -103,6 +103,18 @@ npx skills add https://github.com/vercel-labs/next-skills --skill next-upgrade
 
 ---
 
+#### React Navigation
+
+**Descripción:** Skills para React Navigation — upgrade de versión y migración a configuración estática.
+
+**Instalación:**
+
+```bash
+npx skills add react-navigation/skills
+```
+
+---
+
 #### CRA to Next.js Migration
 
 **Descripción:** Guía completa para convertir proyectos Create React App a Next.js.
