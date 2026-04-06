@@ -115,6 +115,18 @@ npx skills add react-navigation/skills
 
 ---
 
+#### Vercel React View Transitions
+
+**Descripción:** Animar entre estados de UI usando `document.startViewTransition` nativo del browser con `<ViewTransition>`, `startTransition`, `useDeferredValue` y Suspense. Degradación elegante en browsers no soportados.
+
+**Instalación:**
+
+```bash
+npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-view-transitions
+```
+
+---
+
 #### CRA to Next.js Migration
 
 **Descripción:** Guía completa para convertir proyectos Create React App a Next.js.
