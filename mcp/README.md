@@ -48,17 +48,6 @@ claude mcp add next-devtools npx next-devtools-mcp@latest
 
 ---
 
-## TanStack
-
-**Descripción:** Permite a Claude Code trabajar con el ecosistema TanStack (Query, Router, Table, Form). Puede ayudar a configurar, generar código y gestionar estas librerías en proyectos React.
-
-**Instalación:**
-```bash
-claude mcp add tanstack -- npx @tanstack/cli mcp
-```
-
----
-
 ## Nx
 
 **Descripción:** Servidor MCP lean de Nx para conectarse a Nx Cloud y Self-Healing CI. Proporciona acceso a APIs autenticadas que el agente no puede alcanzar por CLI solo.
