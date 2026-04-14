@@ -48,6 +48,21 @@ claude mcp add next-devtools npx next-devtools-mcp@latest
 
 ---
 
+## Maestro
+
+**Descripción:** Permite a Claude Code interactuar con Maestro para testing de apps móviles. Puede crear tests inspeccionando la UI, ejecutar flujos en dispositivos/emuladores, diagnosticar y reparar tests fallidos, gestionar dispositivos y consultar documentación de sintaxis Maestro.
+
+**Instalación:**
+```bash
+claude mcp add maestro maestro mcp
+```
+
+> Requisito: necesitás tener Maestro CLI instalado. Ver [instalación](https://docs.maestro.dev/get-started/installing-maestro).
+
+> Fuente: https://maestro.dev/blog/maestro-mcp-an-introduction
+
+---
+
 ## Nx
 
 **Descripción:** Servidor MCP lean de Nx para conectarse a Nx Cloud y Self-Healing CI. Proporciona acceso a APIs autenticadas que el agente no puede alcanzar por CLI solo.
