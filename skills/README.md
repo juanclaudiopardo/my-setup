@@ -25,6 +25,22 @@ Las skills funcionan con 18+ agentes de IA: Claude Code, GitHub Copilot, Cursor,
 
 ---
 
+## UI Skills (Directorio para Design Engineers)
+
+**Descripción:** Directorio curado de skills de UI para *design engineers*, creado por ibelick. Reúne 100+ skills de distintos autores (pbakaus, antfu, vercel-labs, anthropics, AccessLint, raphaelsalaja, cloudai-x, shadcn-ui, y más) cubriendo accesibilidad, motion/animaciones, craft de frontend, layout, tipografía, color, Three.js y calidad de interfaces. Cada skill funciona con Claude Code, Cursor y Codex.
+
+**Uso:**
+
+```bash
+npx ui-skills start
+```
+
+Lanza un CLI interactivo para buscar, previsualizar e instalar skills. Incluye la skill `ui-skills-root`, una capa de routing que, antes de implementar, selecciona el conjunto mínimo de skills útil según el objetivo de UI (categoría, stack e intención).
+
+> Fuente: https://www.ui-skills.com/
+
+---
+
 ## Skills Instaladas
 
 ### React y Next.js
@@ -408,6 +424,20 @@ npx skills add https://github.com/vercel-labs/skills --skill find-skills
 ```bash
 npx skills add https://github.com/vercel-labs/before-and-after --skill before-and-after
 ```
+
+---
+
+#### Improve
+
+**Descripción:** Audita cualquier codebase y escribe planes de implementación autocontenidos para que otros agentes los ejecuten. La idea: usar el modelo más capaz para entender el repo, priorizar qué vale la pena y escribir la spec, y delegar la ejecución a modelos más baratos. Nunca implementa nada — el plan es el producto. Incluye subcomandos: `/improve quick` (pasada barata), `/improve deep` (exhaustiva), `/improve security` (auditoría enfocada, también perf/tests/bugs), `/improve branch` (solo lo que cambia la branch actual), `/improve next` (sugerencias de features), `/improve plan <desc>`, `/improve execute <plan>` (despacha un ejecutor más barato en un worktree aislado y revisa el diff) y `/improve reconcile` (refresca el backlog). Con `--issues` también publica los planes como issues de GitHub.
+
+**Instalación:**
+
+```bash
+npx skills add shadcn/improve
+```
+
+> Fuente: https://github.com/shadcn/improve
 
 ---
 
